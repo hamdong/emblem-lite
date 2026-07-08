@@ -1,0 +1,173 @@
+export interface Unit {
+  id: string
+  faction: 'player' | 'computer'
+  shape: 'circle' | 'square' | 'triangle'
+  weapon: 'sword' | 'axe' | 'lance'
+  hp: number
+  maxHp: number
+  atk: number
+  def: number
+  spd: number
+  mov: number
+  x: number
+  y: number
+  hasMoved: boolean
+}
+
+export function getInitialUnits(): Unit[] {
+  return [
+    // Player Units
+    {
+      id: 'p1',
+      faction: 'player',
+      shape: 'circle',
+      weapon: 'sword',
+      hp: 22,
+      maxHp: 22,
+      atk: 10,
+      def: 4,
+      spd: 12,
+      mov: 6,
+      x: 1,
+      y: 10,
+      hasMoved: false,
+    },
+    {
+      id: 'p2',
+      faction: 'player',
+      shape: 'square',
+      weapon: 'axe',
+      hp: 26,
+      maxHp: 26,
+      atk: 12,
+      def: 6,
+      spd: 7,
+      mov: 6,
+      x: 2,
+      y: 10,
+      hasMoved: false,
+    },
+    {
+      id: 'p3',
+      faction: 'player',
+      shape: 'triangle',
+      weapon: 'lance',
+      hp: 20,
+      maxHp: 20,
+      atk: 9,
+      def: 3,
+      spd: 10,
+      mov: 6,
+      x: 1,
+      y: 9,
+      hasMoved: false,
+    },
+
+    // Computer Units
+    {
+      id: 'e1',
+      faction: 'computer',
+      shape: 'circle',
+      weapon: 'sword',
+      hp: 14,
+      maxHp: 14,
+      atk: 7,
+      def: 2,
+      spd: 6,
+      mov: 6,
+      x: 8,
+      y: 2,
+      hasMoved: false,
+    },
+    {
+      id: 'e2',
+      faction: 'computer',
+      shape: 'square',
+      weapon: 'axe',
+      hp: 16,
+      maxHp: 16,
+      atk: 9,
+      def: 3,
+      spd: 4,
+      mov: 6,
+      x: 9,
+      y: 3,
+      hasMoved: false,
+    },
+    {
+      id: 'e3',
+      faction: 'computer',
+      shape: 'triangle',
+      weapon: 'lance',
+      hp: 15,
+      maxHp: 15,
+      atk: 7,
+      def: 1,
+      spd: 5,
+      mov: 6,
+      x: 10,
+      y: 2,
+      hasMoved: false,
+    },
+    {
+      id: 'e4',
+      faction: 'computer',
+      shape: 'circle',
+      weapon: 'sword',
+      hp: 14,
+      maxHp: 14,
+      atk: 7,
+      def: 2,
+      spd: 6,
+      mov: 6,
+      x: 7,
+      y: 4,
+      hasMoved: false,
+    },
+    {
+      id: 'e5',
+      faction: 'computer',
+      shape: 'square',
+      weapon: 'axe',
+      hp: 16,
+      maxHp: 16,
+      atk: 9,
+      def: 3,
+      spd: 4,
+      mov: 6,
+      x: 8,
+      y: 5,
+      hasMoved: false,
+    },
+    {
+      id: 'e6',
+      faction: 'computer',
+      shape: 'triangle',
+      weapon: 'lance',
+      hp: 15,
+      maxHp: 15,
+      atk: 7,
+      def: 1,
+      spd: 5,
+      mov: 6,
+      x: 9,
+      y: 5,
+      hasMoved: false,
+    },
+    {
+      id: 'e7',
+      faction: 'computer',
+      shape: 'circle',
+      weapon: 'sword',
+      hp: 18,
+      maxHp: 18,
+      atk: 8,
+      def: 4,
+      spd: 4,
+      mov: 6,
+      x: 10,
+      y: 4,
+      hasMoved: false,
+    },
+  ]
+}
