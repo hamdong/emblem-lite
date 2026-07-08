@@ -1,6 +1,6 @@
-# Fire Emblem Lite
+# Emblem Lite
 
-Fire Emblem Lite is a small, simplified tactical-board prototype built with Vue 3, TypeScript, Vite, and Pinia. It is meant as a learning project for state management, component composition, and reactive UI patterns.
+Emblem Lite is a small, simplified tactical-board prototype built with Vue 3, TypeScript, Vite, and Pinia. It is meant as a learning project for state management, component composition, and reactive UI patterns.
 
 ## Tech stack
 
